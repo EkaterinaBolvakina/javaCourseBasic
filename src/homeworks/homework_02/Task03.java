@@ -7,15 +7,19 @@
 package homeworks.homework_02;
 public class Task03 {
     public static void main(String[] args) {
+        //Variant 1:
         int x;
         int y;
         int z;
         x = 3;
         y = 4;
         z = 5;
-        System.out.println("Число "+x+y+z +" -> "+x +", "+y +", "+z);
-        System.out.println(""+x+y+z);
-        //Variant 2 ???:
-
+        System.out.println("Variant1: Число "+x+y+z +" -> "+x +", "+y +", "+z);
+        //Variant 2:
+        int a = 345;
+        int a1 = a/100;
+        int a2 = (a/10) % 10;
+        int a3 = a % 10;
+        System.out.println("Variant2: Число " +a +" -> "+a1+", "+a2+", "+a3);
     }
 }
