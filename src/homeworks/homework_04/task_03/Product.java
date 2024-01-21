@@ -9,10 +9,15 @@ public class Product {
         this.priceProductB = priceProductB;
         this.discount = discount;
     }
-    public void purchseResult(){
+    public void purchaseResult(){
         int sumAfterDiscount = (priceProductA + priceProductB) - discount;
         System.out.println("Total after discount: "+ sumAfterDiscount);
         System.out.println("Discount: " + discount);
     }
-
+// OR:
+    public void purchaseResult2 (int priceProductA, int priceProductB, int discount ){
+        int sumAfterDiscount = (priceProductA + priceProductB) - discount;
+        System.out.println("Total after discount: "+ sumAfterDiscount);
+        System.out.println("Discount: " + discount);
+    }
 }
