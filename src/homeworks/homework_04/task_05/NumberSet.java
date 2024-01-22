@@ -10,7 +10,7 @@ public class NumberSet {
         set3.example();
         Number set4 = new Number(37,3);
         set4.example();
-        Number set5 = new Number(275,4);
+        Number set5 = new Number(275,2);
         set5.example();
     }
 }

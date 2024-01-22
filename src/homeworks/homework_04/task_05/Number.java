@@ -14,4 +14,5 @@ public class Number {
         int remainder = num % num1;
         System.out.println("Remainder when dividing a number "+num+" by number "+num1+" = "+remainder);
     }
+
 }
