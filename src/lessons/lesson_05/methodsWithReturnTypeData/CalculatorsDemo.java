@@ -3,7 +3,7 @@ package lessons.lesson_05.methodsWithReturnTypeData;
 public class CalculatorsDemo {
     public static void main(String[] args) {
 
-        //Using Method WITH RETURN:
+        //Using Method WITH RETURN of variable:
         CalculatorWithReturnResult calculatorWithReturnResult = new CalculatorWithReturnResult();
         int a = 10;
         int b = 12;
