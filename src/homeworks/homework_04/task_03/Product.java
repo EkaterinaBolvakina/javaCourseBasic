@@ -14,7 +14,7 @@ public class Product {
         System.out.println("Total after discount: "+ sumAfterDiscount);
         System.out.println("Discount: " + discount);
     }
-// OR:
+// OR other variant if necessary:
     public void purchaseResult2 (int priceProductA, int priceProductB, int discount ){
         int sumAfterDiscount = (priceProductA + priceProductB) - discount;
         System.out.println("Total after discount: "+ sumAfterDiscount);
