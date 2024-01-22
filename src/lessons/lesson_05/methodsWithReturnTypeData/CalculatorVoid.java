@@ -16,7 +16,7 @@ public class CalculatorVoid {
         System.out.println("Multiplication result of a = "+a+" and b = "+b+" is "+result);
     }
     public void div(int a, int b){
-        result = a / b;
+        double result = (double) a / b;
         System.out.println("Division result of a = "+a+" and b = "+b+" is "+result);
     }
 }

@@ -15,8 +15,8 @@ public class CalculatorWithReturnResult {
         int result = a * b;
         return result;
     }
-    public int division(int a, int b){
-        int result = a / b;
+    public double division(int a, int b){
+        double result = (double) a / b;
         return result;
     }
 

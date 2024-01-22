@@ -11,14 +11,11 @@ public class CalculatorsDemo {
         int resultFromMethodSum = calculatorWithReturnResult.sum(a,b);
         System.out.println("Result of sum a = " + a + " and b = " + b +" is: " + resultFromMethodSum);
 
-        int resultFromMethodSub = calculatorWithReturnResult.subtraction(a,b);
-        System.out.println("Result of subtraction a = " + a + " and b = " + b +" is: " + resultFromMethodSub);
+        System.out.println("Result of subtraction a = " + a + " and b = " + b +" is: " + calculatorWithReturnResult.subtraction(a,b));
 
-        int resultFromMethodMultiplication = calculatorWithReturnResult.multiplication(a,b);
-        System.out.println("Result of multiplication a = " + a + " and b = " + b +" is: " + resultFromMethodMultiplication);
+        System.out.println("Result of multiplication a = " + a + " and b = " + b +" is: " + calculatorWithReturnResult.multiplication(a,b));
 
-        int resultFromMethodDivision = calculatorWithReturnResult.division(a,b);
-        System.out.println("Result of division a = " + a + " and b = " + b +" is: " + resultFromMethodDivision);
+        System.out.println("Result of division a = " + a + " and b = " + b +" is: " + calculatorWithReturnResult.division(a,b));
 
         System.out.println();
 
