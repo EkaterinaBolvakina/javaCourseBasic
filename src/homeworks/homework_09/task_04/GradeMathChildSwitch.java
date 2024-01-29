@@ -17,8 +17,8 @@ public class GradeMathChildSwitch {
     public static void main(String[] args) {
 
         int minGrade = 0;
-        int maxGrade = 12;
-        double grade = Math.random() * (maxGrade - minGrade ) + minGrade;
+        int maxGrade = 11;
+        double grade = Math.random() * (maxGrade - minGrade + 1 ) + minGrade;
         long gradeMath = Math.round(grade);
         System.out.println("'Hi Mum, I've got a "+gradeMath+" on my maths test paper today.'");
 
