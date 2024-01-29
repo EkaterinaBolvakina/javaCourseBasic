@@ -18,9 +18,9 @@ public class NumberChoiceIfElse {
             System.out.println("You entered 2.");
         } else if (a==3){
             System.out.println("You entered 3.");
-        } else {
+        } else
             System.out.println("You entered a whole number, but not between 1 and 3.");
         }
     }
 
-}
+
