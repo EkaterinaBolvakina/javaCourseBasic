@@ -22,7 +22,13 @@ public class BookUtil {
         String titleOfBook = ui.inputText("Please enter a title of the book: ");
         int numberOfPagesInBook = ui.inputInt("Please enter a number of pages in the book: ");
         int numberInCatalogue =ui.inputInt("Please enter number of book in catalogue: ");
-        int bookLocation = ui.inputInt("Is a book on hand? Then please enter '1', if in storage then '0'");
+        String bookLocation = ui.inputText("Is a book on hand? Then please enter '1', if in storage then '0'");
+        if (bookLocation.equals("1")){
+            bookLocation = "Book is on hand";
+        } else if (bookLocation.equals("0")) {
+            bookLocation = "Book is in storage";
+        } else { bookLocation = "undefined";
+        }
         return new Book(author,titleOfBook,numberOfPagesInBook,numberInCatalogue,bookLocation);
     }
 
@@ -43,8 +49,14 @@ public class BookUtil {
         return inputNumberInCatalogue;
     }
     // Method for input new book Location:
-    public int inputBookLocation(){
-        int inputBookLocation = ui.inputInt("Is a book on hand? Then please enter '1', if in storage then '0'");
+    public String inputBookLocation(){
+        String inputBookLocation = ui.inputText("Is a book on hand? Then please enter '1', if in storage then '0'");
+        if (inputBookLocation.equals("1")){
+            inputBookLocation = "Book is on hand";
+        } else if (inputBookLocation.equals("0")) {
+            inputBookLocation = "Book is in storage";
+        } else { inputBookLocation = "undefined";
+        }
         return inputBookLocation;
     }
 

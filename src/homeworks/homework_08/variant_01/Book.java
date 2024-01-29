@@ -5,10 +5,10 @@ public class Book {
     private String titleOfBook;
     private int numberOfPagesInBook;
     private int numberInCatalogue;
-    private int bookLocation;
+    private String bookLocation;
 
     //Constructor with all parameters:
-    public Book(String author, String titleOfBook, int numberOfPagesInBook, int numberInCatalogue, int bookLocation) {
+    public Book(String author, String titleOfBook, int numberOfPagesInBook, int numberInCatalogue, String bookLocation) {
         this.author = author;
         this.titleOfBook = titleOfBook;
         this.numberOfPagesInBook = numberOfPagesInBook;
@@ -22,20 +22,20 @@ public class Book {
     }
 
     // Setters for changing add information:
-    public void setAddInfo(int numberOfPagesInBook, int numberInCatalogue, int bookLocation) {
+    public void setAddInfo(int numberOfPagesInBook, int numberInCatalogue, String bookLocation) {
         this.numberOfPagesInBook = numberOfPagesInBook;
         this.numberInCatalogue = numberInCatalogue;
         this.bookLocation = bookLocation;
     }
+
     //Print all information about book:
     @Override
     public String toString() {
-        return "Book{" +
-                "author='" + author + '\'' +
-                ", titleOfBook='" + titleOfBook + '\'' +
-                ", numberOfPagesInBook=" + numberOfPagesInBook +
-                ", numberInCatalogue=" + numberInCatalogue +
-                ", bookLocation=" + bookLocation +
-                '}';
+        return
+                "Author: " + author +
+                ", Title: " + titleOfBook +
+                ", Number of pages: " + numberOfPagesInBook +
+                ", Number in catalogue: " + numberInCatalogue +
+                ", Location: " + bookLocation;
     }
 }
