@@ -1,8 +1,5 @@
 package homeworks.homework_08.variant_01;
 
-import homeworks.homework_08.BookAddParameters;
-import homeworks.homework_08.BookAllParameters;
-import homeworks.homework_08.BookFirstParameters;
 import homeworks.homework_08.ScannerUserInput;
 
 public class BookUtil {
