@@ -22,27 +22,36 @@ public class LuckyNumber {
         if (numberLength != 4) {
             System.out.println("=== ERROR ===");
             System.out.println("You entered NO FOUR-DIGIT number!");
-        }
-        int nullIndex = 0;
-        int firstIndex = 1;
-        String firstDigit = number.substring(nullIndex, firstIndex);
-        String secondDigit = number.substring(nullIndex + 1, firstIndex + 1);
-        String thirdDigit = number.substring(nullIndex + 2, firstIndex + 2);
-        String fourthDigit = number.substring(nullIndex + 3, firstIndex + 3);
-
-        // How to convert String to Int? ==>> int nameInt = Integer.parseInt(String);
-        int firstDigitInt = Integer.parseInt(firstDigit);
-        int secondDigitInt = Integer.parseInt(secondDigit);
-        int thirdDigitInt = Integer.parseInt(thirdDigit);
-        int fourthDigitInt = Integer.parseInt(fourthDigit);
-
-        int firstPartOfNumber = firstDigitInt + secondDigitInt;
-        int secondPartOfNumber = thirdDigitInt + fourthDigitInt;
-
-        if (firstPartOfNumber == secondPartOfNumber) {
-            System.out.println("Number is LUCKY! :-) ");
         } else {
-            System.out.println("Number is not LUCKY :-(");
+            //Variant1:
+            //int nullIndex = 0;
+            //int firstIndex = 1;
+            //String firstDigit = number.substring(nullIndex, firstIndex);
+            //String secondDigit = number.substring(nullIndex + 1, firstIndex + 1);
+            //String thirdDigit = number.substring(nullIndex + 2, firstIndex + 2);
+            //String fourthDigit = number.substring(nullIndex + 3, firstIndex + 3);
+
+            //Variant2: with CharAt()
+            String firstDigit = String.valueOf(number.charAt(0));
+            String secondDigit = String.valueOf(number.charAt(1));
+            String thirdDigit = String.valueOf(number.charAt(2));
+            String fourthDigit = String.valueOf(number.charAt(3));
+
+
+            // How to convert String to Int? ==>> int nameInt = Integer.parseInt(String);
+            int firstDigitInt = Integer.parseInt(firstDigit);
+            int secondDigitInt = Integer.parseInt(secondDigit);
+            int thirdDigitInt = Integer.parseInt(thirdDigit);
+            int fourthDigitInt = Integer.parseInt(fourthDigit);
+
+            int firstPartOfNumber = firstDigitInt + secondDigitInt;
+            int secondPartOfNumber = thirdDigitInt + fourthDigitInt;
+
+            if (firstPartOfNumber == secondPartOfNumber) {
+                System.out.println("Number is LUCKY! :-) ");
+            } else {
+                System.out.println("Number is not LUCKY :-(");
+            }
         }
     }
 }
