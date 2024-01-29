@@ -1,4 +1,4 @@
-package homeworks.homework_08;
+package homeworks.homework_08.variant_02;
 
 public class BookAllParameters {
     private BookFirstParameters bookFirstParameters;
@@ -14,6 +14,10 @@ public class BookAllParameters {
     }
 
     public BookAllParameters(BookAddParameters bookAddParameters) {
+        this.bookAddParameters = bookAddParameters;
+    }
+
+    public void setBookAddParameters(BookAddParameters bookAddParameters) {
         this.bookAddParameters = bookAddParameters;
     }
 

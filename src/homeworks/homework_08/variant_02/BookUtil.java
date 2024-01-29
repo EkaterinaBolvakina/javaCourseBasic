@@ -1,4 +1,6 @@
-package homeworks.homework_08;
+package homeworks.homework_08.variant_02;
+
+import homeworks.homework_08.ScannerUserInput;
 
 public class BookUtil {
 
@@ -26,11 +28,13 @@ public class BookUtil {
         int numberOfPagesInBook = ui.inputInt("Please enter a number of pages in the book: ");
         int numberInCatalogue =ui.inputInt("Please enter number of book in catalogue: ");
         int bookLocation = ui.inputInt("Is a book on hand? Then please enter '1', if in storage then '0'");
-
         return new BookAddParameters(numberOfPagesInBook, numberInCatalogue, bookLocation);
     }
+
+
     public BookAllParameters editBookAuthorAndTitleWithAddInfo(BookFirstParameters bookFirstParameters,BookAddParameters bookAddParameters) {
         return new BookAllParameters(bookFirstParameters,bookAddParameters);
+
     }
     public BookAllParameters createBookAllParameters(){
         String author = ui.inputText("Please enter author of the book: ");

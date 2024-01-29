@@ -18,7 +18,7 @@
 //- редактирует книгу добавляя: номер каталога, количество страниц и где книга находится
 //- который вывод подробно информацию о книге
 
-package homeworks.homework_08;
+package homeworks.homework_08.variant_02;
 
 public class BookDemo {
     public static void main(String[] args) {

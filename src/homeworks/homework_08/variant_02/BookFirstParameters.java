@@ -1,4 +1,4 @@
-package homeworks.homework_08;
+package homeworks.homework_08.variant_02;
 
 public class BookFirstParameters {
     private String author;
@@ -8,6 +8,8 @@ public class BookFirstParameters {
         this.author = author;
         this.titleOfBook = titleOfBook;
     }
+
+    //get setter!!!!!!!
 
     @Override
     public String toString() {
