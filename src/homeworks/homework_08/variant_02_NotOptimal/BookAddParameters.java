@@ -1,4 +1,4 @@
-package homeworks.homework_08.variant_02;
+package homeworks.homework_08.variant_02_NotOptimal;
 
 public class BookAddParameters {
     private int numberOfPagesInBook;
