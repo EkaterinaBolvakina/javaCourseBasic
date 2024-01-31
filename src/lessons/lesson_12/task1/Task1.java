@@ -9,18 +9,19 @@ import homeworks.homework_08.ScannerUserInput;
 public class Task1 {
     public static void main(String[] args) {
         ScannerUserInput ui = new ScannerUserInput();
-        String text = ui.inputText("Please enter your text: ");
+        String text = ui.inputText("Please enter your text which contains symbols like @ ( ) : ");
+        String changedText = "";
 
         for (int i = 0; i < text.length(); i++) {
             char currentChar = text.charAt(i);
-           // System.out.println("Symbol in text with index "+i+": "+currentChar);
-            if ((currentChar =='(') ||(currentChar ==')') ||(currentChar =='@')){
-                text.substring(0,i);
-            }else {
-                System.out.print(currentChar);
+                if ((currentChar =='(') ||
+                    (currentChar ==')') ||
+                    (currentChar =='@'))
+            {} else {
+                changedText = changedText + currentChar;
             }
         }
+        System.out.println("Your text after special symbol replace: "+changedText);
     }
 }
-
 

@@ -18,6 +18,7 @@ public class Line {
     //2 Method: Напишите метод, который принимает в качестве параметра строку:
     public void setMessage(String message) {this.message = message;}
     public void print(){
+
         System.out.println(message);
     }
     //3 Method: Распечатать последний символ строки. Используем метод String.charAt().
@@ -30,7 +31,7 @@ public class Line {
     //4 Method: Проверить, содержит ли ваша строка подстроку “Java”. Используем метод String.contains().
     public void containsUnderLine(){
         String underLine = "Java";
-        Boolean checkContainsUnderLine = message.contains(underLine);
+        boolean checkContainsUnderLine = message.contains(underLine);
         System.out.println("Do this line contain the underline " +underLine+" ? "+checkContainsUnderLine);
     }
     //5 Method: Заменить все символы “а” на “о”.
