@@ -8,15 +8,12 @@ public class Task3 {
     public static void main(String[] args) {
         ScannerUserInput ui = new ScannerUserInput();
         int number = ui.inputInt("Please enter a number: ");
-        int numberOfIteration = 0;
         int factorial = 1;
-        for (int i = 0; i < number; i++) {
-            numberOfIteration = numberOfIteration + 1;
-            factorial = factorial * numberOfIteration;
-            System.out.print(+numberOfIteration+"; ");
+        for (int i = 1; i <= number; i++) {
+            factorial = factorial * i;
+            System.out.print(+i+"; ");
         }
 
-        System.out.println("number of iterations: "+numberOfIteration);
         System.out.println("Factorial of number "+number+": "+factorial);
     }
 }
