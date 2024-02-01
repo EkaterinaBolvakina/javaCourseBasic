@@ -9,7 +9,7 @@ package homeworks.homework_13.task_01;
 
 import java.util.Arrays;
 
-public class taskWithoutMethods {
+public class task_01 {
     public static void main(String[] args) {
 
         //Die mathematische Methode random generiert die zufällige Zahl zwischen [0;1)
