@@ -20,6 +20,7 @@ public class task_02 {
         System.out.println(Arrays.toString(randomArray)); //Выведите массив на консоль в строку.
 
         // Определите , является ли массив строго возрастающей последовательностью.
+
         if ((randomArray[0]<randomArray[1]) &&
             (randomArray[1]<randomArray[2]) &&
             (randomArray[2]<randomArray[3]) &&
