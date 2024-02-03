@@ -26,10 +26,13 @@ public class task_02_WithMethods {
         }
 
         public void checkRandomArray(int[] randomArray) {
-            if ((randomArray[0] < randomArray[1]) &&
-                    (randomArray[1] < randomArray[2]) &&
-                    (randomArray[2] < randomArray[3]) &&
-                    (randomArray[3] < randomArray[4])) {
+            boolean checkIncreasingSequence = true;
+            for (int i = 1; i < randomArray.length; i++) {
+                if (randomArray[i] < randomArray[i - 1]) {
+                    checkIncreasingSequence = false;
+                }
+            }
+            if (checkIncreasingSequence) {
                 System.out.println("Array has a strictly increasing sequence");
             } else {
                 System.out.println("Array has NO strictly increasing sequence");

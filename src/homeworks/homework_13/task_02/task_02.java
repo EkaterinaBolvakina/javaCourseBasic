@@ -20,7 +20,21 @@ public class task_02 {
         System.out.println(Arrays.toString(randomArray)); //Выведите массив на консоль в строку.
 
         // Определите , является ли массив строго возрастающей последовательностью.
+        boolean checkIncreasingSequence = true;
+        for (int i = 1; i < randomArray.length; i++) {
+            if (randomArray[i] < randomArray[i - 1]) {
+                checkIncreasingSequence = false;
+            }
+        }
+        if (checkIncreasingSequence) {
+            System.out.println("Array has a strictly increasing sequence");
+        } else {
+                System.out.println("Array has NO strictly increasing sequence");
+            }
+        }
+    }
 
+/* oder Check sehr einfach geschrieben, funktioniert auch:
         if ((randomArray[0]<randomArray[1]) &&
             (randomArray[1]<randomArray[2]) &&
             (randomArray[2]<randomArray[3]) &&
@@ -29,6 +43,6 @@ public class task_02 {
             System.out.println("Array has a strictly increasing sequence");
         } else {System.out.println("Array has NO strictly increasing sequence");
 
-        }
-    }
-}
+        } */
+
+
