@@ -16,6 +16,39 @@ public class task_06 {
         System.out.println("Array Input:");
         System.out.println(Arrays.toString(words));
 
+        int evenCounter = 0;
+        int oddCounter =0;
+        for (int i = 0; i < words.length; i++) {
+            if ((words[i].length()) % 2 == 0){
+                evenCounter = evenCounter + 1;
+            } else {
+                oddCounter = oddCounter +1;
+            }
+        }
+        System.out.println("Count of words in array with even number of letters: "+evenCounter);
+        System.out.println("Count of words in array with odd number of letters: "+oddCounter);
+        System.out.println("============================================");
+
+        String[] evenArray = new String[evenCounter];
+        String[] oddArray = new String[oddCounter];
+        int evenArrayIndex = 0;
+        int oddArrayIndex = 0;
+        for (int i = 0; i < words.length; i++) {
+            if ((words[i].length()) % 2 == 0){
+                evenArray[evenArrayIndex++] = words[i];
+            } else {
+                oddArray[oddArrayIndex++] = words[i];
+            }
+        }
+        System.out.println("Array 1: Words with even number of letters: ");
+        System.out.println(Arrays.toString(evenArray));
+        System.out.println("Array 2: Words with odd number of letters: ");
+        System.out.println(Arrays.toString(oddArray));
+
+    }
+}
+
+/*    Variante 2:
         ArrayList<String> evenNumberOfSymbolInWord = new ArrayList<>();
         ArrayList<String> oddNumberOfSymbolInWord = new ArrayList<>();
         for (String word : words) {
@@ -29,23 +62,5 @@ public class task_06 {
         System.out.println(evenNumberOfSymbolInWord);
         System.out.println("Array 2: Words with odd number of letters: ");
         System.out.println(oddNumberOfSymbolInWord);
-
-    }
-}
-/*
-        for (int i = 0; i < words.length; i++) {
-            if ((words[i].length()) % 2 == 0){
-                evenCounter = evenCounter + 1;
-                System.out.println("even: "+words[i]);
-                } else {
-                oddCounter = oddCounter +1;
-                System.out.println("odd: "+words[i]);
-            }
-                }
-
-        //String[] even = {words[i]};
-        //System.out.println(Arrays.toString(even));
-        System.out.println("Even number of letters: "+evenCounter);
-        System.out.println("Odd number of letters: "+oddCounter);
 
  */
