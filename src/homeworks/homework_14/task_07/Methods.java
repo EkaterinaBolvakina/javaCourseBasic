@@ -44,7 +44,7 @@ public class Methods {
         int maxElement = workingArray[0];
         for (int i = 1; i < workingArray.length; i++) {
             if (workingArray[i] == maxElement) {
-                countOfMax++;
+                countOfMax = countOfMax +1;
             }
         }
         if (countOfMax > 1) {
@@ -52,12 +52,13 @@ public class Methods {
             int currentIndex = 0;
             for (int i = 0; i < workingArray.length; i++) {
                 if (workingArray[i] == maxElement) {
-                    arrayOfIndexDoubleMax[currentIndex] = i;
-                    currentIndex++;
+                    arrayOfIndexDoubleMax[currentIndex++] = i;
                 }
             }
-            System.out.println(Arrays.toString(arrayOfIndexDoubleMax));
+            System.out.println("Array has "+countOfMax+" maximums");
+            System.out.println("Maximums have further indexes: "+Arrays.toString(arrayOfIndexDoubleMax));
         }
+        System.out.println("Array has only one maximum");
     }
 }
 

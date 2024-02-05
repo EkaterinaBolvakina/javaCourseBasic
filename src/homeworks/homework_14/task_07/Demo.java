@@ -26,6 +26,6 @@ public class Demo {
         demo.findMaxAndItsIndexOfElementsInArray(arrDemo);
             int sum = demo.findSumOfElementsInArray(arrDemo);
         System.out.println("Sum of elements in array: "+ sum);
-        demo.createArrayOfIndexDoubleMax(arrDemo);
+       demo.createArrayOfIndexDoubleMax(arrDemo);
     }
 }
