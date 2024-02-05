@@ -14,7 +14,7 @@ public class Task_02 {
         //1. Создайте массив из всех нечётных чисел от 1 до 99.
         ScannerUserInput ui = new ScannerUserInput();
         int maxNumber = ui.inputInt("Please enter max number, which should be in your array: ");
-        int arrLength = (maxNumber/2)+1; // For odd number, for even number would be: (maxNumber/2)
+        int arrLength = (maxNumber/2)+1; // For odd number: (maxNumber/2)+1, for even number would be: (maxNumber/2)
 
         int[] oddArray = new int[arrLength];
         oddArray[0] = 1;
