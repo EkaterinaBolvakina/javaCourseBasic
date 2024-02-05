@@ -11,19 +11,27 @@ import java.util.Arrays;
 public class Task_04 {
     public static void main(String[] args) {
 
-    String[] dayOfWeek = new String[7];
-    dayOfWeek[0] = "Montag";
-    dayOfWeek[1] = "Dienstag";
-    dayOfWeek[2] = "Mittwoch";
-    dayOfWeek[3] = "Donnerstag";
-    dayOfWeek[4] = "Freitag";
-    dayOfWeek[5] = "Samstag";
-    dayOfWeek[6] = "Sonntag";
+    int numberOfDays = 7;
+    int ind = 0;
+    String[] dayOfWeek = new String[numberOfDays];
+        for (int i = 0; i < dayOfWeek.length; i++) {
+            if (i == ind++){ dayOfWeek[i] = "Montag";}
+            else if (i == ind++){ dayOfWeek[i] = "Dienstag";}
+            else if (i == ind++){ dayOfWeek[i] = "Mittwoch";}
+            else if (i == ind++){ dayOfWeek[i] = "Donnerstag";}
+            else if (i == ind++){ dayOfWeek[i] = "Freitag";}
+            else if (i == ind++){ dayOfWeek[i] = "Samstag";}
+            dayOfWeek[i] = "Sonntag";
+            }
 
         System.out.println("массив: ");
         System.out.println(Arrays.toString(dayOfWeek));
-        System.out.println("значение последнего элемента: ");
-        System.out.println(dayOfWeek[6]);
+
+        for (int i = dayOfWeek.length-1; i < dayOfWeek.length; i++) {
+            System.out.println("значение последнего элемента: ");
+            System.out.println(dayOfWeek[i]);
+        }
+
 
 
 
