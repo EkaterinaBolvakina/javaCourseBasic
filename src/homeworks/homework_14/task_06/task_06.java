@@ -49,6 +49,10 @@ public class task_06 {
 }
 
 /*    Variante 2:
+        String[] words = {"Ich", "Wetter", "Sommer", "Freude", "Schmetterling"};
+        System.out.println("Array Input:");
+        System.out.println(Arrays.toString(words));
+
         ArrayList<String> evenNumberOfSymbolInWord = new ArrayList<>();
         ArrayList<String> oddNumberOfSymbolInWord = new ArrayList<>();
         for (String word : words) {
