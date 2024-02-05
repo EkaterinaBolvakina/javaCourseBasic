@@ -10,9 +10,6 @@
 в идеале - оформить основные модули вашей программы отдельными методами
  */
 package homeworks.homework_14.task_07;
-
-import homeworks.homework_14.task_08.InputUser;
-
 import java.util.Arrays;
 
 public class Demo {
