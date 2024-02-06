@@ -1,4 +1,4 @@
-package lesson_15.code.lessoncode.multiLevelStrucrure;
+package lessons.lesson_15.code.lessoncode.multiLevelStrucrure;
 
 public class DataHighLevel {
 
