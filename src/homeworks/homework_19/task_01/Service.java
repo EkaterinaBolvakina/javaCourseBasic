@@ -19,11 +19,11 @@ public class Service {
 
     public String[] fillArrayFromUser(String[] array) {
         ScannerUserInput ui = new ScannerUserInput();
-        String[] words = array;
+       // String[] words = array;
         for (int i = 0; i < array.length; i++) {
-            words[i] = ui.inputText("Please enter a word nr. "+(i+1));
+            array[i] = ui.inputText("Please enter a word nr. "+(i+1));
         }
-        return words;
+        return array;
     }
 
     public void printWords(String[] words){

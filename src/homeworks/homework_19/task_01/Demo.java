@@ -11,7 +11,7 @@ public class Demo {
         Service demo = new Service();
         int demoArrSize = demo.inputArrSizeFromUser();
         String[] demoArray = demo.createArray(demoArrSize);
-       // System.out.println(Arrays.toString(demoArray));
+        //System.out.println(Arrays.toString(demoArray)); // print created array, but not filled, with words = "null"
         String[] demoFilledArray = demo.fillArrayFromUser(demoArray);
         demo.printWords(demoFilledArray);
         demo.sortArray(demoFilledArray);
