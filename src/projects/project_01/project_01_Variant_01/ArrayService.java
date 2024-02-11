@@ -1,4 +1,4 @@
-package projects.project_01.project_Variant_01;
+package projects.project_01.project_01_Variant_01;
 
 import homeworks.homework_08.ScannerUserInput;
 

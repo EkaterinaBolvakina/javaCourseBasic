@@ -15,7 +15,7 @@
 
 Реализуйте класс ArraySortDemo для демонстрации работы программы.
  */
-package projects.project_01.project_Variant_01;
+package projects.project_01.project_01_Variant_01;
 
 public class ArraySortDemo {
     public static void main(String[] args) {
