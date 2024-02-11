@@ -34,7 +34,6 @@ public class Methods {
     }
     public int[] sortRandomArrayDescending(int[] array){
         // sort with method ChooseSort descending по убыванию absteigend:
-        int n = array.length;
         for (int i = 0; i < array.length; i++) {
             int max = array[i];
             int maxId = i;
