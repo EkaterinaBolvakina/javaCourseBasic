@@ -1,6 +1,6 @@
 package homeworks.homework_21.inheritance.task_02;
 
-public abstract class Shape {
+abstract class Shape {
     private String title;
 
     public Shape(String title) {
