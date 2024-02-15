@@ -1,6 +1,4 @@
-package homeworks.homework_21.inheritance.task_03;
-
-import java.util.Arrays;
+package homeworks.homework_21.inheritance.task_03.variant_02;
 
 public class Developer extends Employee {
     Projects projects;

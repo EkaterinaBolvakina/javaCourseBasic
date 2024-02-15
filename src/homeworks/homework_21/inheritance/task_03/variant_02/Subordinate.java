@@ -1,4 +1,4 @@
-package homeworks.homework_21.inheritance.task_03;
+package homeworks.homework_21.inheritance.task_03.variant_02;
 
 public class Subordinate extends Employee {
 

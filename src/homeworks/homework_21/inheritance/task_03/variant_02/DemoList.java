@@ -4,7 +4,7 @@
 В классе `Manager` добавьте список подчиненных - массив сотрудников (экземпляры класса Employee),
 а в классе `Developer` - список проектов, над которыми работает разработчик - массив String[].
  */
-package homeworks.homework_21.inheritance.task_03;
+package homeworks.homework_21.inheritance.task_03.variant_02;
 
 public class DemoList {
     public static void main(String[] args) {
