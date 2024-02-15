@@ -7,6 +7,6 @@
  */
 package homeworks.homework_21.abstraction.task_02;
 
-public abstract class MusicalInstrument {
+abstract class MusicalInstrument {
     abstract void playNote();
 }
