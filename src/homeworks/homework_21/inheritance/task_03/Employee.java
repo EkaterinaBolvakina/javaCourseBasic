@@ -8,7 +8,7 @@ package homeworks.homework_21.inheritance.task_03;
 
 import java.util.Date;
 
-public abstract class Employee {
+abstract class Employee {
     private String surname;
     private String name;
     private String department;
