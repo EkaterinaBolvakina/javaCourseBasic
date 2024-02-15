@@ -1,6 +1,6 @@
 package homeworks.homework_21.abstraction.task_03;
 
-public abstract class NavigationSystem {
+abstract class NavigationSystem {
 
     String model;
     String producer;
