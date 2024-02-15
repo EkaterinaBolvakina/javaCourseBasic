@@ -7,7 +7,7 @@
  */
 package homeworks.homework_21.abstraction.task_01;
 
-public abstract class InputDevice {
+abstract class InputDevice {
     private String id;
     private String model;
 
