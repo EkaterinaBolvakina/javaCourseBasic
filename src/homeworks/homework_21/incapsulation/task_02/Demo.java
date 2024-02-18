@@ -11,23 +11,25 @@ package homeworks.homework_21.incapsulation.task_02;
 public class Demo {
     public static void main(String[] args) {
         UserMethods demo = new UserMethods();
-        String firstPassword = demo.inputPasswordFromUser();
-        demo.checkFirstPasswordFromUser(firstPassword);
-        demo.addFirstPassword(firstPassword);
 
-        // change password:
+        System.out.println("------------CREATING A NEW PASSWORD-----------");
+        String firstPassword = demo.inputPasswordFromUser();
+        boolean checkFirstPassword = demo.checkPasswordFromUser(firstPassword);
+        String addedFirstPassword = demo.addPassword(firstPassword, checkFirstPassword);
+
+        //only if first password was created correct, then continue with changing password:
+        if (addedFirstPassword != null){
+        System.out.println();
+        System.out.println("------------CHANGING PASSWORD-----------");
         System.out.println("Repeat your old password");
         String oldPassword = demo.inputPasswordFromUser();
+        boolean checkOldPassword = demo.checkOldPasswordFromUser(oldPassword, addedFirstPassword);
+
+        if (checkOldPassword==true){
         System.out.println("Enter your new password");
         String newPassword = demo.inputPasswordFromUser();
-        demo.checkOldNewPasswordFromUser(oldPassword,newPassword);
-        demo.addNextPassword(oldPassword,newPassword);
-
-
-
-
-
-
+        boolean checkNewPassword = demo.checkPasswordFromUser(newPassword);
+        String addedNewPassword = demo.addPassword(newPassword,checkNewPassword);}}
 
     }
 }
