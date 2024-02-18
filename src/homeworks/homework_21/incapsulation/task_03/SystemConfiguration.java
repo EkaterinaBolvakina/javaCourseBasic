@@ -8,6 +8,8 @@
  */
 package homeworks.homework_21.incapsulation.task_03;
 
+import java.util.Objects;
+
 public class SystemConfiguration {
     private String loggingLevel;
     private String logFilePath;
@@ -24,10 +26,11 @@ public class SystemConfiguration {
         this.loggingLevel = loggingLevel;
     }
 
-    public void changeLogLevel(Boolean inputCheck, String newLogLevel){
-        if (inputCheck == true){
-             setLoggingLevel(newLogLevel);
-        }
-        System.out.println("Incorrect values");
+    @Override
+    public String toString() {
+        return "SystemConfiguration{" +
+                "loggingLevel='" + loggingLevel + '\'' +
+                ", logFilePath='" + logFilePath + '\'' +
+                '}';
     }
 }
