@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TVRepository {
 
-    public void addList (ArrayList<TV> tvList, TV tv){
+    public void addList (ArrayList<TV> tvList, TV tv){  // if we have different ArrayLists
             tvList.add(tv);
        // System.out.println(tvList);
     }
