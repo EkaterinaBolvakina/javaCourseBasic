@@ -15,10 +15,10 @@ public class TVRepository {
         }
     }
 
-    public TV findFirstTvByProducer(ArrayList<TV> tvList, String producerForDelete){
+    public TV findFirstTvByProducer(ArrayList<TV> tvList, String producer){
         for (int i = 0; i < tvList.size(); i++) {
             TV currentTvFromCollection = tvList.get(i);
-            if (currentTvFromCollection.getProducer().equals(producerForDelete)) {
+            if (currentTvFromCollection.getProducer().equals(producer)) {
                 return currentTvFromCollection;
             }
         }
