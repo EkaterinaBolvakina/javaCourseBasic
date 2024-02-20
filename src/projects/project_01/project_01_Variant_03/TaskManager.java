@@ -1,7 +1,5 @@
 package projects.project_01.project_01_Variant_03;
 
-import homeworks.homework_08.ScannerUserInput;
-
 import java.util.Objects;
 
 public class TaskManager {
@@ -20,7 +18,6 @@ public class TaskManager {
     }
 
     public void changeStatusOfTask(Task[] task, String id, String newStatus) {  //change status of task with ID
-        boolean isEqual = true;
         for (int i = 0; i < task.length; i++) {
             if (Objects.equals(task[i].getId(), id)) {
                 task[i].setStatus(newStatus);
