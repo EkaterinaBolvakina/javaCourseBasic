@@ -1,7 +1,5 @@
 package lessons.lesson_28.practice.task2;
 
-import lessons.lesson_04.create_03_classConstructor.Person;
-
 import java.util.*;
 
 public class MapTask2 {

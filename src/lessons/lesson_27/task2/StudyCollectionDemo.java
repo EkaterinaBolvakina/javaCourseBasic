@@ -1,6 +1,7 @@
 package lessons.lesson_27.task2;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StudyCollectionDemo {
     public static void main(String[] args) {
@@ -11,6 +12,12 @@ public class StudyCollectionDemo {
         Course course2 = new Course("HTML Basic","C2",mentor2);
         Course course3 = new Course("SQL","C3",mentor1);
         Course course4 = new Course("Linux","C4",mentor1);
+
+        List<Course> courses = new ArrayList<>();
+        courses.add(course1);
+        courses.add(course2);
+        courses.add(course3);
+        courses.add(course4);
 
         Student student1 = new Student("S1","Schulz");
         Student student2 = new Student("S2","Schneider");
@@ -57,6 +64,18 @@ public class StudyCollectionDemo {
             System.out.println(course.getCourseID()+" "+course.getCourseName());
         }
 
+        printCourseFromStudent(courses);
 
+    }
+    public static void printCourseFromStudent(List<Course> courses){
+        List<Student> allStudent = new ArrayList<>();
+
+        for (int i = 0; i < courses.size(); i++) {
+            Course currentCourse = courses.get(i);
+            allStudent.addAll(currentCourse.getStudents());
+        }
+        for (Student student : allStudent){
+            System.out.println(student);
+        }
     }
 }
