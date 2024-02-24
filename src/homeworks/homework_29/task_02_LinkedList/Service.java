@@ -1,4 +1,4 @@
-package homeworks.homework_29.task_02;
+package homeworks.homework_29.task_02_LinkedList;
 
 import java.util.List;
 

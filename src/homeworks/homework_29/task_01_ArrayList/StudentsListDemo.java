@@ -7,7 +7,7 @@
     - Выведите список студентов в обратном порядке.
     - Удалите студента из списка по индексу и выведите обновленный список.
  */
-package homeworks.homework_29.task_01;
+package homeworks.homework_29.task_01_ArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
