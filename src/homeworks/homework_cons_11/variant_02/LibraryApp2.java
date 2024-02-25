@@ -65,13 +65,17 @@ public class LibraryApp2 {
         printList(management.getBooks());
         System.out.println("____________________________");
         System.out.println("---- LIST of BOOKS by READER ----");
-        printList(management.getReaders());
+        management.printBooksByAllReader(management.getReaders());
+       //Variant 2: printList(management.getReaders());
 
         reader1.removeBookByReader(reader1,book1);
         reader1.removeBookByReader(reader1,book7);
         reader1.removeBookByReader(reader1,book2);
         System.out.println("---- LIST of BOOKS by READER AFTER book removing ----");
         printList(management.getReaders());
+
+        System.out.println("---- LIST of BOOKS by READER 2 ----");
+        management.printBooksByReader(management.getReaders(),2);
 
     }
     private static void printList(List list){
