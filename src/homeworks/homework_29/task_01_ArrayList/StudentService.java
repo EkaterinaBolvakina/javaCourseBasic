@@ -16,7 +16,7 @@ public class StudentService {
         int n = students.size();
         for (int i = 0; i < n-1; i++) {
             for (int j = 0; j < n-i-1; j++) {
-                if (students.get(j).compareTo(students.get(j + 1)) < 0) {
+                if (students.get(j).getStudentName().compareTo(students.get(j + 1).getStudentName()) < 0) {
                     // Swap elements if they are in the wrong order
                     Student temp = students.get(j);
                     students.set(j, students.get(j + 1));
