@@ -41,17 +41,17 @@ public class LibraryApp2 {
         management.addBook(book8);
         management.addBook(book9);
 
-        List<Book> booksByReader1 = new ArrayList<>();
-        Reader reader1 = new Reader(1,"Reader 1",booksByReader1);
+
+        Reader reader1 = new Reader(1,"Reader 1");
         reader1.addBookByReader(book1);
         reader1.addBookByReader(book7);
-        List<Book> booksByReader2 = new ArrayList<>();
-        Reader reader2 = new Reader(2,"Reader 2",booksByReader2);
+
+        Reader reader2 = new Reader(2,"Reader 2");
         reader2.addBookByReader(book2);
         reader2.addBookByReader(book3);
         reader2.addBookByReader(book4);
-        List<Book> booksByReader3 = new ArrayList<>();
-        Reader reader3 = new Reader(3,"Reader 3",booksByReader3);
+
+        Reader reader3 = new Reader(3,"Reader 3");
         reader3.addBookByReader(book5);
         reader3.addBookByReader(book6);
         reader3.addBookByReader(book8);

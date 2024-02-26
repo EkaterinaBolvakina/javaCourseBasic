@@ -1,5 +1,6 @@
 package homeworks.homework_cons_11.variant_02.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Reader {
@@ -7,10 +8,10 @@ public class Reader {
     private String readerName;
     private List<Book> booksByReader;
 
-    public Reader(Integer readerId, String readerName, List<Book> booksByReader) {
+    public Reader(Integer readerId, String readerName) {
         this.readerId = readerId;
         this.readerName = readerName;
-        this.booksByReader = booksByReader;
+        this.booksByReader = new ArrayList<>();
     }
 
     public Integer getReaderId() {
