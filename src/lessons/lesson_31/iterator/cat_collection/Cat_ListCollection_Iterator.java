@@ -81,5 +81,6 @@ public class Cat_ListCollection_Iterator {
           CatData tempCat = catDataListIterator.previous();
             System.out.println(tempCat);
         }
+        System.out.println(catDataList);
     }
 }
