@@ -17,34 +17,34 @@ public class SuitcaseDemo {
         SuitcaseComparatorMaterial suitcaseComparatorMaterial = new SuitcaseComparatorMaterial();
 
         Set<Suitcase> suitcaseSet = new TreeSet<>(suitcaseComparatorSize.thenComparing(suitcaseComparatorMaterial).thenComparing(suitcaseComparatorColour));
-        suitcaseSet.add(new Suitcase("plastic","M","Red"));
-        suitcaseSet.add(new Suitcase("fabric","S","Red"));
-        suitcaseSet.add(new Suitcase("plastic","L","Rose"));
-        suitcaseSet.add(new Suitcase("plastic","S","Red"));
-        suitcaseSet.add(new Suitcase("fabric","S","Grey"));
-        suitcaseSet.add(new Suitcase("plastic","M","Blue"));
-        suitcaseSet.add(new Suitcase("fabric","M","Black"));
-        suitcaseSet.add(new Suitcase("fabric","M","Black"));
+        suitcaseSet.add(new Suitcase(Material.Plastic,Size.M,Colour.Red));
+        suitcaseSet.add(new Suitcase(Material.Fabric,Size.S,Colour.Red));
+        suitcaseSet.add(new Suitcase(Material.Plastic,Size.L,Colour.Rose));
+        suitcaseSet.add(new Suitcase(Material.Plastic,Size.S,Colour.Red));
+        suitcaseSet.add(new Suitcase(Material.Fabric,Size.S,Colour.Grey));
+        suitcaseSet.add(new Suitcase(Material.Plastic,Size.M,Colour.Blue));
+        suitcaseSet.add(new Suitcase(Material.Fabric,Size.M,Colour.Black));
+        suitcaseSet.add(new Suitcase(Material.Fabric,Size.M,Colour.Yellow));
 
-        System.out.println("------ TreeSet collection : UNIQUE elements sorted by COMPARATORS: Size -> Material -> Colour ----------");
+        System.out.println("------ TreeSet collection : UNIQUE elements sorted by COMPARATORS: Size -> Material -> Colour with ENUM ----------");
         System.out.println(suitcaseSet);
         System.out.println();
 
         List<Suitcase> suitcasesList = new LinkedList<>();
-        suitcasesList.add(new Suitcase("plastic","M","Red"));
-        suitcasesList.add(new Suitcase("fabric","S","Red"));
-        suitcasesList.add(new Suitcase("plastic","L","Rose"));
-        suitcasesList.add(new Suitcase("plastic","S","Red"));
-        suitcasesList.add(new Suitcase("fabric","S","Grey"));
-        suitcasesList.add(new Suitcase("plastic","M","Blue"));
-        suitcasesList.add(new Suitcase("fabric","M","Black"));
-        suitcasesList.add(new Suitcase("fabric","M","Black"));
+        suitcasesList.add(new Suitcase(Material.Plastic,Size.M,Colour.Red));
+        suitcasesList.add(new Suitcase(Material.Fabric,Size.S,Colour.Red));
+        suitcasesList.add(new Suitcase(Material.Plastic,Size.L,Colour.Rose));
+        suitcasesList.add(new Suitcase(Material.Plastic,Size.S,Colour.Red));
+        suitcasesList.add(new Suitcase(Material.Fabric,Size.S,Colour.Grey));
+        suitcasesList.add(new Suitcase(Material.Plastic,Size.M,Colour.Blue));
+        suitcasesList.add(new Suitcase(Material.Fabric,Size.M,Colour.Black));
+        suitcasesList.add(new Suitcase(Material.Fabric,Size.M,Colour.Yellow));
 
         System.out.println("------ LinkedList collection : ALL elements NOT sorted ----------");
         System.out.println(suitcasesList);
         System.out.println();
 
-        System.out.println("------ LinkedList collection : ALL elements SORTED by COMPARATORS:  Size -> Material -> Colour ----------");
+        System.out.println("------ LinkedList collection : ALL elements SORTED by COMPARATORS:  Size -> Material -> Colour with ENUM ----------");
         suitcasesList.sort(suitcaseComparatorSize.thenComparing(suitcaseComparatorMaterial).thenComparing(suitcaseComparatorColour));
         System.out.println(suitcasesList);
 

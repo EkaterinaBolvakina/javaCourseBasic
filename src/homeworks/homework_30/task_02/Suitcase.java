@@ -1,34 +1,34 @@
 package homeworks.homework_30.task_02;
 
 public class Suitcase {
-private String material;
-private String size;
-private String colour;
+private Material material;
+private Size size;
+private Colour colour;
 
-    public Suitcase(String material, String size, String colour) {
+    public Suitcase(Material material, Size size, Colour colour) {
         this.material = material;
         this.size = size;
         this.colour = colour;
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
-    public String getSize() {
+    public Size getSize() {
         return size;
     }
 
-    public String getColour() {
+    public Colour getColour() {
         return colour;
     }
 
     @Override
     public String toString() {
         return "Suitcase{" +
-                "material='" + material + '\'' +
-                ", size='" + size + '\'' +
-                ", colour='" + colour + '\'' +
+                "material=" + material +
+                ", size=" + size +
+                ", colour=" + colour +
                 '}';
     }
 }
