@@ -31,5 +31,12 @@ public class ForIndex_LIST_withoutError {
 
         System.out.println(strings);
 
+        for (String temp: strings){
+            System.out.println(temp);
+            if (temp.contains("C")){
+                strings.remove(temp); //Hier kommt wieder der Fehler!!! Weil JAVA in der Schleife die Indexen nicht kennt
+            }
+        }
+        System.out.println(strings);
     }
 }
