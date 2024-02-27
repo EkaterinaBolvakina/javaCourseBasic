@@ -1,4 +1,4 @@
-package homeworks.homework_30.task_01;
+package homeworks.homework_30.task_01.withInteger;
 
 public class Flat implements Comparable<Flat>{
     private int area;

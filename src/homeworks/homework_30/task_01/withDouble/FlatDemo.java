@@ -1,4 +1,4 @@
-package homeworks.homework_30.task_01;
+package homeworks.homework_30.task_01.withDouble;
 
 import java.util.Set;
 import java.util.TreeSet;
@@ -13,13 +13,13 @@ import java.util.TreeSet;
 public class FlatDemo {
     public static void main(String[] args) {
         Set<Flat> flatSet = new TreeSet<>();
-        flatSet.add(new Flat(63,3));
-        flatSet.add(new Flat(42,1));
-        flatSet.add(new Flat(65,2));
-        flatSet.add(new Flat(80,3));
-        flatSet.add(new Flat(97,3));
-        flatSet.add(new Flat(100,5));
-        flatSet.add(new Flat(30,1));
+        flatSet.add(new Flat(63.25,2));
+        flatSet.add(new Flat(42.35,1));
+        flatSet.add(new Flat(63.28,2));
+        flatSet.add(new Flat(80.0,3));
+        flatSet.add(new Flat(97.5,3));
+        flatSet.add(new Flat(100.0,5));
+        flatSet.add(new Flat(30.5,1));
 
         System.out.println(flatSet);
 
