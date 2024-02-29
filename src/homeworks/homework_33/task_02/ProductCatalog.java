@@ -1,6 +1,5 @@
 package homeworks.homework_33.task_02;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
