@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TourCollection{
-    Queue<String> requests = new LinkedList<>();
+    Queue<String> requests;
     int maxSize;
     public TourCollection(int maxSize) {    //- Конструктор, принимающий `maxSize`
         this.maxSize = maxSize;
@@ -20,8 +20,7 @@ public class TourCollection{
     }
     public void processRequest(){
         if (!requests.isEmpty()){
-            requests.poll();
-            System.out.println("Request is processed");
+            System.out.println("Request "+requests.poll()+" is processed");
         }else {
             System.out.println("Request collection is empty");
         }
