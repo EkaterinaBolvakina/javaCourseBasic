@@ -25,6 +25,7 @@ public class Optional<T> {
     }
     public T orElse(T defaultValue) {
         //   return isPresent() ? object : defaultValue;
+        // Konstruktion analog:
         if (isPresent()){
             return object;
         } else {
