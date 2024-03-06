@@ -21,6 +21,16 @@ public class Stack <T> {
     public List<T> getStack() {
         return stack;
     }
+    // Print für array muss man extra method schreiben:
+    public void printArray() {
+        for (T item : stack) {
+            if (item instanceof int[]) {     //nur für array aus Integers, für Array aus Objekten muss Object[] stehen anstatt int[]
+                System.out.println(Arrays.toString((int[]) item));
+            } else {
+                System.out.println(item);
+            }
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -30,11 +40,17 @@ public class Stack <T> {
         doubles.add(56.98);
         listStack.push(doubles);
         System.out.println(listStack.getStack());
+        listStack.printArray();
 
         Stack<int[]>  intArrayStack = new Stack<>();
         int[] intArray = {1,3,4,6,7};
         intArrayStack.push(intArray);
 
+        int[] intArray2 = {1,56,78,6,7};
+        intArrayStack.push(intArray2);
+
+        // Print the arrays in the stack
+        intArrayStack.printArray();
     }
 }
 
