@@ -1,0 +1,30 @@
+Welche Zeitkomplexität hat LinkedList?
+Die Zeitkomplexität von Operationen auf einer LinkedList in Java,
+insbesondere auf einer LinkedList-Implementierung aus der Java Collections Framework,
+variiert je nach der Art der Operation:
+
+1) Einfügen/Entfernen am Anfang oder Ende (Head/Tail):
+
+Einfügen oder Entfernen eines Elements am Anfang oder Ende der LinkedList hat
+eine konstante Zeitkomplexität von O(1).
+Das liegt daran, dass es lediglich erforderlich ist,
+die Verknüpfungen für das erste bzw. letzte Element zu aktualisieren.
+
+2) Einfügen/Entfernen an einer bestimmten Position:
+
+Einfügen oder Entfernen an einer bestimmten Position erfordert im Durchschnitt O(n/2) Schritte,
+wobei n die Anzahl der Elemente in der LinkedList ist.
+Dies liegt daran, dass die LinkedList von Anfang oder Ende aus durchlaufen werden kann,
+um die Position zu finden, an der die Operation durchgeführt wird.
+
+3) Zugriff nach Index:
+
+Der Zugriff auf ein Element in der LinkedList anhand des Index erfordert O(n) Schritte,
+da sie von Anfang oder Ende der Liste durchlaufen müssen, um die Position zu finden.
+
+LinkedList vs. ArrayList:
+
+Die Wahl einer LinkedList gegenüber einer ArrayList hängt von den spezifischen Anforderungen Ihrer Anwendung ab.
+LinkedLists sind besonders effizient für das Einfügen oder Entfernen von Elementen am Anfang oder Ende,
+während ArrayLists effizienteren zufälligen Zugriff bieten.
+Es ist wichtig, die spezifischen Anforderungen Ihrer Anwendung zu berücksichtigen, um die am besten geeignete Datenstruktur auszuwählen.

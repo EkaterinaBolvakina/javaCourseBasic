@@ -1,0 +1,22 @@
+Welchen Unterschied gibt es zwischen List und ArrayList?
+
+zu 1) Liste (List):
+
+List ist ein Interface im Java Collections Framework.
+Es gehört zum Paket java.util.
+List repräsentiert eine geordnete Sammlung von Elementen und erlaubt das Vorhandensein von Duplikaten.
+Klassen, die das List-Interface implementieren, sind unter anderem ArrayList, LinkedList, Vector und andere.
+
+zu 2) ArrayList:
+
+ArrayList ist eine spezifische Implementierung des List-Interfaces.
+Es gehört zum Paket java.util.
+ArrayList basiert auf einem Array, was es dynamisch und veränderbar macht.
+Es ermöglicht einen konstanten Zugriff auf Elemente (Zeitkomplexität O(1)) und
+ist im Allgemeinen schnell für zufälligen Zugriff und Iteration.
+Es ist nicht synchronisiert, daher ist es standardmäßig nicht threadsicher. Wenn Sie eine synchronisierte Liste benötigen,
+könnten Sie Vector in Betracht ziehen oder Ihre ArrayList mit Collections.synchronizedList() umhüllen.
+Zusammengefasst ist List ein Interface, das das Verhalten einer Listen-Datenstruktur definiert,
+während ArrayList eine spezifische Implementierung dieses Interfaces ist. Sie können List verwenden,
+wenn Sie mit jeder Implementierung einer Liste arbeiten möchten, und ArrayList, wenn Sie die Funktionen und Eigenschaften benötigen,
+die sie bietet, wie die dynamische Veränderbarkeit auf der Basis eines Arrays.

@@ -1,0 +1,20 @@
+Was bedeutet die Notation O(1) ?
+
+Die Zeitkomplexität O(1) (ausgesprochen als "O Eins") bedeutet,
+dass der Algorithmus oder die Operation konstante Zeit benötigt,
+unabhängig von der Größe der Eingabedaten. Mit anderen Worten,
+die Laufzeit des Algorithmus bleibt konstant, selbst wenn die Größe des Problems zunimmt.
+
+In Bezug auf Datenstrukturen wie Arrays oder ArrayLists bedeutet eine konstante Zeitkomplexität O(1),
+dass der Zugriff auf ein Element in der Struktur unabhängig von der Anzahl der Elemente in konstanter Zeit erfolgt.
+Dies ist typischerweise der Fall, wenn der Zugriff direkt über einen Index oder einen Referenzwert erfolgt.
+
+Beispielhaft könnte der Zugriff auf ein Element in einem Array mit O(1) erfolgen,
+da Sie direkt auf die Speicherposition dieses Elements zugreifen können,
+ohne durch die gesamte Struktur zu iterieren.
+Dies ist im Gegensatz zu O(n), wo die Laufzeit linear mit der Anzahl der Elemente zunimmt,
+da jeder Index einzeln überprüft werden muss.
+
+Es ist wichtig zu beachten, dass O(1) nicht bedeutet,
+dass eine Operation in genau einem Schritt erfolgt,
+sondern dass die Anzahl der Schritte konstant bleibt, unabhängig von der Eingabegröße.
