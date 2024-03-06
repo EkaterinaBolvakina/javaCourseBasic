@@ -24,7 +24,13 @@ public class Optional<T> {
         }
     }
     public T orElse(T defaultValue) {
-        return isPresent() ? object : defaultValue;
+        //   return isPresent() ? object : defaultValue;
+        if (isPresent()){
+            return object;
+        } else {
+            return defaultValue;
+        }
+
     }
 
     public static void main(String[] args) {
