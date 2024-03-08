@@ -10,7 +10,13 @@ public class TreeMap_Task_09 {
     public static void main(String[] args) {
 
         TreeMap<Integer,Integer> factorial = new TreeMap<>();
+
         addElement(factorial,5);
+        addElement(factorial,23);
+        addElement(factorial,3);
+        addElement(factorial,4);
+        addElement(factorial,6);
+
         System.out.println(factorial);
 
     }
