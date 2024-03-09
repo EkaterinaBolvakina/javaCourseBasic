@@ -1,4 +1,4 @@
-package projects.project_02.variant_02;
+package projects.project_02.variant_02.entity;
 
 import java.util.Objects;
 

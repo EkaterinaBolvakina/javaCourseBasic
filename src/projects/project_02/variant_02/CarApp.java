@@ -1,5 +1,8 @@
 package projects.project_02.variant_02;
 
+import projects.project_02.variant_02.entity.Car;
+import projects.project_02.variant_02.service.CarDealer;
+
 public class CarApp {
     public static void main(String[] args) {
         CarDealer carDealer = new CarDealer();

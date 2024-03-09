@@ -1,4 +1,6 @@
-package projects.project_02.variant_02;
+package projects.project_02.variant_02.service;
+
+import projects.project_02.variant_02.entity.Car;
 
 import java.util.Comparator;
 

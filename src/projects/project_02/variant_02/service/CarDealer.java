@@ -1,9 +1,11 @@
-package projects.project_02.variant_02;
+package projects.project_02.variant_02.service;
+
+import projects.project_02.variant_02.entity.Car;
 
 import java.util.*;
 
 public class CarDealer {
-    private Map<String,Car> cars = new HashMap<>();
+    private Map<String, Car> cars = new HashMap<>();
     private Comparator<Car> carComparatorRating = new CarComparatorRating();
     private Comparator<Car> carComparatorPrice = new CarComparatorPrice();
     private Comparator<Car> carComparatorYear = new CarComparatorYear();
