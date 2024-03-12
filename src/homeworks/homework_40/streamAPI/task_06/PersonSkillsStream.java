@@ -40,7 +40,7 @@ public class PersonSkillsStream {
                 .filter(age -> age.getAge() > 25)
                 .map(person -> person.getSkills())  // Hier wird die Liste der Fähigkeiten für jede Person extrahiert. Der Rückgabetyp ist List<String>.
                 .reduce((skillsA, skillsB) -> {     // die Liste der Fähigkeiten der Personen wird reduziert, um nur die gemeinsamen Fähigkeiten zu behalten.
-                    skillsA.retainAll(skillsB);
+                    skillsA.retainAll(skillsB);     // Behalte nur die gemeinsamen Fähigkeiten in skillsA (eine Liste von Strings, die verschiedene Fähigkeiten repräsentieren)
                     return skillsA;
                 })
                 .orElseGet(ArrayList::new)         // Wenn es keine gemeinsamen Fähigkeiten gibt, wird eine leere Liste zurückgegeben.
