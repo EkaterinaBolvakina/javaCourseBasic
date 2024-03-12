@@ -1,6 +1,7 @@
 package homeworks.homework_40.streamAPI.task_04;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /*
@@ -21,7 +22,7 @@ public class StudentStream {
                     double v = Math.round(grade2.getAvgGrade() - grade1.getAvgGrade());return (int)v;
                 })
                 .limit(3)
-                .sorted((year1, year2) -> {return (year1.getYearOfEnrolment() - year2.getYearOfEnrolment());})
+                .sorted(Comparator.comparingInt(Student::getYearOfEnrolment)) // analog: .sorted((year1, year2) -> {return (year1.getYearOfEnrolment() - year2.getYearOfEnrolment())
                 .toList();
         System.out.println(studentsWithHighestGrade);
     }
