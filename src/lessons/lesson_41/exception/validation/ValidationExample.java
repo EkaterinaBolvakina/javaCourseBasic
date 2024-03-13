@@ -1,10 +1,10 @@
 package lessons.lesson_41.exception.validation;
 
-import lesson_06.code.lessoncode.scanner.UserInput;
+import homeworks.homework_08.ScannerUserInput;
 
 public class ValidationExample {
     public static void main(String[] args) {
-        UserInput ui = new UserInput();
+        ScannerUserInput ui = new ScannerUserInput();
 
         String userName = ui.inputText("Введите ваше имя: ");
 

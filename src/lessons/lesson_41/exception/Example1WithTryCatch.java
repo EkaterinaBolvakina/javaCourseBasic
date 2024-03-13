@@ -1,13 +1,14 @@
 package lessons.lesson_41.exception;
 
-import lesson_06.code.lessoncode.scanner.UserInput;
+import homeworks.homework_08.ScannerUserInput;
+
 
 public class Example1WithTryCatch {
     public static void main(String[] args) {
-        UserInput ui = new UserInput();
+        ScannerUserInput ui = new ScannerUserInput();
 
-        int x = ui.inputInteger("Введите первое число");
-        int y = ui.inputInteger("Введите второе число");
+        int x = ui.inputInt("Введите первое число");
+        int y = ui.inputInt("Введите второе число");
 
 
         try {
