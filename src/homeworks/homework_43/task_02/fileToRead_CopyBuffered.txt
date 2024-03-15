@@ -1,0 +1,6 @@
+## Homework
+Topic: Java Input/Output
+
+Task 1. Reading data from a text file and displaying it on the screen
+        Description: Write a Java programme that will read data from a text file,
+        using FileReader and BufferedReader classes, and output it to the screen.
