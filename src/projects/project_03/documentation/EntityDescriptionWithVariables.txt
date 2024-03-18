@@ -1,0 +1,71 @@
+Список всех entity:
+
+1. Course
+   id,
+   courseName,
+   description,
+   teacherName,
+   duration,
+   ....... etc.
+   Связан с :
+   List<String> courseMaterials или List<Content>  ???
+   List<test>
+
+2. Student
+   id,
+   firstName,
+   lastName,
+   emailAddress,
+   password,
+   .....
+   Связан с :
+   Course course        курсом, к которому он относится ( или List<Course> , Map<Course, Integer>) ????
+   List<TestResult>     с результатами тестов, которые он прошел
+
+3. Test                 тест, который студент должен пройти в рамках курса
+   id,
+   List<QuestionOfTest>
+
+   Связан с :
+   Course course        курсом, к которому он относится
+   List<TestResult>     результатами тестирования студентов
+
+4. TestResult           Содержит информацию о результатах тестирования студентов в рамках конкретного курса
+   id,
+   numberOfRightAnswer,  количество правильных ответов
+   score,                 оценка
+   evaluationDate,       дата прохождения
+   Связан с :            ??? конкретным тестом, студентом и курсом
+   Test test
+   Student student
+   Course course
+
+5. Question               вопрос теста
+   id,
+   String text,           содержимое вопроса
+   List<AnswerOption>     список вариантов ответов
+
+6. AnswerOption           вариант ответа на вопрос теста
+   id,
+   text,
+   boolean isCorrect      правильный или неправильный (или int correctOptionIndex)
+
+7. StudentAnswer          выбранный студентом вариант ответа на вопрос теста
+
+8. Analytics
+
+
+
+
+
+
+
+
+. Content
+   id,
+   title,правильный или неправильный
+   description,
+   type,              файл / видео / фото
+   sourcePath         ссылка на файл / видео / фото, где находится, откуда брать
+
+
