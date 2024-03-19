@@ -87,17 +87,17 @@
 
        - servise
                  -  Validation  ???
-                   + ValidationException extends RuntimeException (? na chto zdes proverjaet dannye ?)
-                   + ValidationRequest  (neskolko metodov: checkLoginData dlja Student i Admin)
+                   + ValidationException extends RuntimeException (? на что здесь проверяет данные ?)
+                   + ValidationRequest  (несколько методов: checkLoginData для Student и Admin)
          +  StudentService       для работы с StudentsRepository  (add (Request: StudentDto, Response: ClientResponse), remove (Request: StudentDto, Response: ClientResponse), find by id (Request: Integer studentId, Response:  ClientResponse)
-         +  CourseService        для работы с CoursesRepository  (create, validation, add, remove, find by...)
+         +  CourseService        для работы с CoursesRepository  (add (Request: CourseDto, Response: ClientResponse), remove (Request: CourseDto, Response: ClientResponse), find by id (Request: Integer courseId, Response:  ClientResponse)
        ???  +  TestService          для работы с TestsRepository  (create, validation, add, remove, find by...)
        ???  +  QuestionService      для работы с QuestionsRepository  (create, validation, add, remove, find by...)
          +  TestResultService    для работы с TestResultsRepository  (, ???????, add, remove, find by...)
-         +  AnalyticService      data validation: chto nuzhno etim metodam na vhode? chto vydavat budut?
-         +  StudentLoader  ???? (sohranenie istorii v CSV)
+         +  AnalyticService      data validation: что нужно этим методам на входе? что выдавать будут?
+         +  StudentLoader  ???? (сохранение истории в CSV)
 
-         + PrintService (raznye metody принт любого списка (= findAll))
+         + PrintService (разные методы принт любого списка (= findAll))
 
  frontEnd !!!???
        -  HeadMenu ("Hello, make your choice:
